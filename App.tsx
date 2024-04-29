@@ -5,7 +5,7 @@ import axios from 'axios';
 const API_URL = 'https://jsonplaceholder.typicode.com/users';
 
 const App = () => {
-  const [data, setData] = useState<ItemData>([]);
+  const [data, setData] = useState<ItemData[]>([]);
 
   useEffect(() => {
     fetchData();
